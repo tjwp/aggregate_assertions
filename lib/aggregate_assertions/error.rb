@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module Minitest
+  # Error raised when multiple assertions are grouped together.
   class MultipleAssertionError < Minitest::Assertion
     attr_reader :location
 

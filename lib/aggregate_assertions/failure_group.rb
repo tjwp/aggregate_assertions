@@ -14,11 +14,11 @@ module AggregateAssertions
       @other_errors = []
     end
 
-    def add_error(ex)
-      if ex.is_a?(Minitest::Assertion)
-        @failures << ex
+    def add_error(error)
+      if error.is_a?(Minitest::Assertion)
+        @failures << error
       else
-        @other_errors << ex
+        @other_errors << error
       end
     end
 

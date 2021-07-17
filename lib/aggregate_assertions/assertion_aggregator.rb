@@ -11,8 +11,8 @@ module AggregateAssertions
         !store.nil? && !store.empty?
       end
 
-      def add_error(ex)
-        store.last.add_error(ex)
+      def add_error(error)
+        store.last.add_error(error)
       end
 
       def open_failure_group(label = nil)

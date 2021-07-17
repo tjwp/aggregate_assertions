@@ -62,7 +62,7 @@ class AggregateAssertionsTest < Minitest::Test
     error = assert_raises(Exception) do
       aggregate_assertions do
         flunk
-        raise Exception.new("uncaught") # rubocop:disable Lint/RaiseException
+        raise Exception, "uncaught" # rubocop:disable Lint/RaiseException
       end
     end
 

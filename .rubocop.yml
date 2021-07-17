@@ -1,6 +1,13 @@
 AllCops:
   NewCops: enable
+  SuggestExtensions: false
   TargetRubyVersion: 2.6
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
 
 Style/StringLiterals:
   Enabled: true

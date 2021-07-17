@@ -9,10 +9,10 @@ module AggregateAssertions
   module TestPatch
     def assert(test, msg = nil)
       super
-    rescue Minitest::Assertion, StandardError => ex
+    rescue Minitest::Assertion, StandardError => e
       raise unless AssertionAggregator.active?
 
-      AssertionAggregator.add_error(ex)
+      AssertionAggregator.add_error(e)
     end
 
     def aggregate_assertions(label = nil)
@@ -22,8 +22,8 @@ module AggregateAssertions
 
       begin
         yield
-      rescue Minitest::Assertion, StandardError => ex
-        AssertionAggregator.add_error(ex)
+      rescue Minitest::Assertion, StandardError => e
+        AssertionAggregator.add_error(e)
       ensure
         failure_group = AssertionAggregator.close_failure_group
       end
