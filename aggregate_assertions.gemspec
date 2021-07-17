@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tim Perkins"]
   spec.email         = ["tjwp@users.noreply.github.com"]
 
-  spec.summary       = "Helper method to aggregate assertions for minitest"
+  spec.summary       = "Aggregate Minitest assertions"
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/tjwp/aggregate_assertions"
   spec.license       = "MIT"
