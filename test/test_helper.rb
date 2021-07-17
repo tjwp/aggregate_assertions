@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
-require "aggregate_assertions"
 
 require "minitest/autorun"
+
+require "aggregate_assertions"
+
