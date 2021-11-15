@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    aggregate_assertions (0.1.0)
+    aggregate_assertions (0.1.1)
       minitest (~> 5.0)
 
 GEM
