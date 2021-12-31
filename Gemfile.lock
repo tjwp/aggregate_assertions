@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    aggregate_assertions (0.1.1)
+    aggregate_assertions (0.2.0)
       minitest (~> 5.0)
 
 GEM
@@ -45,4 +45,4 @@ DEPENDENCIES
   rubocop-minitest
 
 BUNDLED WITH
-   2.2.31
+   2.3.4

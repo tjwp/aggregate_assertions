@@ -1,4 +1,5 @@
 ## [Unreleased]
+- Require Ruby 2.7 or later.
 
 ## [0.1.1] - 2021-11-15
 - Specify `rubygems_mfa_required` in gemspec metadata.
