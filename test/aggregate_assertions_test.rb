@@ -69,4 +69,12 @@ class AggregateAssertionsTest < Minitest::Test
     assert_equal(error.class, Exception)
     assert_equal(error.message, "uncaught")
   end
+
+  def test_block_is_not_given
+    error = assert_raises(Minitest::Assertion) do
+      aggregate_assertions
+    end
+
+    assert_equal("aggregate_assertions requires a block", error.message)
+  end
 end

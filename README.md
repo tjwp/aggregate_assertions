@@ -69,6 +69,27 @@ There were 3 errors in group "testing response":
         Actual: "Not Found"
 ```
 
+### Experimental: Enable for all tests
+
+All tests in a class or an entire test suite can be implicitly wrapped
+with `aggregate_assertions`.
+
+To enable for all tests in a class include the module `AggregateAssertions::EachTest`:
+
+```ruby
+class MyTest < Minitest::Test
+  include AggregateAssertions::EachTest
+
+  def test_both_errors_reported
+    # both assertions are reported without needing an explicit aggregate_assertions block
+    assert false, "first error"
+    assert false, "second error"
+  end
+end
+```
+
+To enable for all tests in a test suite require `aggregate_assertions/everywhere` from your `test_helper.rb` file.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
