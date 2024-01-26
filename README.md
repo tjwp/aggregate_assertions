@@ -1,6 +1,6 @@
 # aggregate_assertions
 
-Aggregate assertions when testing using minitest. Similar to RSpec's [aggregate_failures](https://relishapp.com/rspec/rspec-expectations/v/3-10/docs/aggregating-failures),
+Aggregate assertions when testing using minitest. Similar to RSpec's [aggregate_failures](https://rspec.info/features/3-12/rspec-expectations/aggregating-failures/),
 this gem enables the reporting failures from multiple assertions in a single test.
 
 It is possible to use [rspec-expectations](https://github.com/rspec/rspec-expectations) with minitest, but the
